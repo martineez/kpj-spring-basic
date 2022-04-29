@@ -5,13 +5,15 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Ignore;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Ignore
 public class BasicTest {
 
-    // TODO: Define messageService parameter and inject it via spring annotation @Autowired
-
-    // TODO: Define countService parameter and inject it via spring annotation @Autowired
+    @Autowired
+    MessageService messageService;
+    @Autowired
+    CountService countService;
 
     @Test
     public void getMessage() throws Exception {
