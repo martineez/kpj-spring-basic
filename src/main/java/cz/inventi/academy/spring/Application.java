@@ -8,7 +8,7 @@ public class Application {
     @SuppressWarnings("resource")
     public static void main(String[] args) {
 
-        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(new String[] { "spring/xml-context.xml" });
+        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"spring/xml-context.xml"});
 
         MessageService messageService = context.getBean("messageService", MessageService.class);
 

@@ -4,7 +4,7 @@ public interface MessageService {
 
     /**
      * Method returns hard coded message.
-     * 
+     *
      * @return hard coded message
      */
     String getMessage();
