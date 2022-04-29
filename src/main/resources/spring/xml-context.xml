@@ -10,6 +10,6 @@
 	<bean id="messageService" class="cz.inventi.academy.spring.MessageServiceImpl" />
 
 	<bean id="countService" class="cz.inventi.academy.spring.CountServiceImpl" init-method="init">
-		<!-- TODO: Define parameter for message service -->
+		<property name="count" value="10"/>
 	</bean>
 </beans>
