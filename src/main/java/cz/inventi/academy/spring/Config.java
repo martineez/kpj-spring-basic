@@ -14,6 +14,7 @@ public class Config {
     @Bean
     public CountService countService() {
         // TODO: Define service
-        return null;
+        return new CountServiceImpl();
+        //return null;
     }
 }

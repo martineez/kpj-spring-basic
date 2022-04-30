@@ -1,5 +1,9 @@
 package cz.inventi.academy.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.annotation.PostConstruct;
+
 /**
  * @see {@link CountService}
  */
@@ -7,10 +11,13 @@ package cz.inventi.academy.spring;
 public class CountServiceImpl implements CountService {
 
     // TODO: Define messageService parameter and inject it via spring annotation @Autowired
+    @Autowired
+    MessageService messageService;
 
     private int count;
 
     // TODO: Write annotation for post construct operation
+    @PostConstruct
     public void init() {
         setCount(10);
     }
