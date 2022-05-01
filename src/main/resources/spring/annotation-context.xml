@@ -8,6 +8,6 @@
 	<description>Spring context which uses component scan and annotation</description>
 
 	<!-- TODO: Define correct base package -->
-	<context:component-scan base-package="XXX" />
+	<context:component-scan base-package="cz.inventi.academy.spring" />
 
 </beans>
