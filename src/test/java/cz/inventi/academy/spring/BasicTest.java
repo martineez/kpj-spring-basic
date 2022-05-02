@@ -1,26 +1,29 @@
 package cz.inventi.academy.spring;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
 import org.junit.Ignore;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 @Ignore
 public class BasicTest {
 
-    // TODO: Define messageService parameter and inject it via spring annotation @Autowired
+    @Autowired
+    private MessageService messageService;
 
-    // TODO: Define countService parameter and inject it via spring annotation @Autowired
+    @Autowired
+    private CountService countService;
 
     @Test
-    public void getMessage() throws Exception {
+    public void getMessage() {
         assertNotNull(messageService);
         assertEquals("Hello world!", messageService.getMessage());
     }
 
     @Test
-    public void printMessage() throws Exception {
+    public void printMessage() {
         assertNotNull(countService);
         countService.printMessage();
     }
