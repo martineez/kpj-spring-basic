@@ -11,5 +11,6 @@
 
 	<bean id="countService" class="cz.inventi.academy.spring.CountServiceImpl" init-method="init">
 		<!-- TODO: Define parameter for message service -->
+		<property name="messageService" ref="messageService"/>
 	</bean>
 </beans>
